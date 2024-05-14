@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:  0px;
+    padding:  0px;
+  } 
+
+  body {
+font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #E5E4E2;
+  }
+
+  header {
+    background-color: #FAF9F6;
+    position: fixed;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .logo h3 a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #020024;
+    text-transform: uppercase;
+  }
+
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+  }
+
+  .nav-bar li {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .nav-bar  a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    transition: color .40s ease;
+  }
+
+  .nav-bar a:hover,
+  .nav-bar .active {
+      border-bottom: 1px solid #020024;
+      color: #020024;
+  }
+  
+  .cart-item{
+      display: flex;
+      position: relative;
+  }
+  .header .logo{
+      font-size: 30px;
+      font-weight: bold;
+      
+  }
+  .cart{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3px 6px;
+      border-radius: 3px;
+      width: 80px;
+  }
+  .fa-solid{
+      color: #202020;
+  }
+  .cart p{
+      height: 22px;
+      width: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 22px;
+      background-color: rgb(31, 31, 31);
+      color: white;
+  }
+
+  .h3 {
+    margin-top: 140px;
+  }
+  
+  .payment-details {
+    display: flex;
+    justify-content: center;
+  }
+
+form {
+    font-family: "DM Sans", sans-serif;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+label {
+    font-family: "DM Sans", sans-serif;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input {
+    font-family: "DM Sans", sans-serif;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+button {
+    font-family: "DM Sans", sans-serif;
+    background-color: #3a3a3a;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+button:hover {
+    background-color: #202020;
+}
+#success-message p {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+#success-message {
+    display: none;
+    color: #202020;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer {
+    background: #FAF9F6; 
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.footer-container > div {
+    flex-grow: 1; 
+    margin-bottom: 20px;
+}
+
+.footer-content,
+.footer-2,
+.footer3,
+.footer4 {
+    flex: 1 1 25%;
+    padding: 20px;
+}
+
+.footer-content h3 {
+    text-transform: uppercase;
+    color: #020024;
+    font-size: 1.3rem;
+}
+
+.footer-content p {
+    margin-top: 20px;
+    font-weight: 400;
+    color: #202020;
+}
+
+.footer-2 h3,
+ .footer-3 h3,
+ .footer-4 h3 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #020024;
+    position: relative;
+}
+
+.footer-2 p {
+    flex: 1 1 25%;
+    padding: 10px;
+}
+
+.footer-2 a {
+    text-decoration: none;
+    color: #202020;
+    font-weight: 400;
+    transition: color .20s ease;
+    
+}
+
+.footer-2 a:hover {
+    color: #020024;
+}
+
+.footer-3 p {
+    flex: 1 1 25%;
+    padding: 15px;
+}
+
+.footer-3 a {
+    text-decoration: none;
+    color: #202020;
+    font-weight: 400;
+    transition: color .20s ease;
+}
+
+.footer-3 a:hover {
+    color: #020024;
+}
+
+.footer-4 p {
+    flex: 1 1 25%;
+    padding: 11px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #202020;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.socials a:hover {
+    color: #020024;
+}
+
+.bottom {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.copy {
+    font-weight: 500;
+}
+
+.f5 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #020024;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="products.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+         <nav>
+            <div class="logo">
+                <h3><a href="index.html">Skyline Automotive</a></h3>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li>
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+            
+            </div>
+            <div class="cart-item">
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        </nav>
+        </header>
+    <main>
+        <section>
+            <div class="content">
+                <div class="filters">
+                    <h3>Search Our Products</h3>
+                    <div id="btns">
+                        <input type="text" id="search" placeholder="Search our products...">
+                        <button id="searchBtn" onclick="search()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="container">
+                <div id="root"></div>
+                <div class="sidebar">
+                    <div class="head"><p>My Cart</p></div>
+                    <div id="cartItem">Your cart is empty</div>
+                    <div class="foot">
+                        <h3>Total</h3>
+                        <h2 id="total">$ 0.00</h2>
+                    </div>
+                    <button id="checkout"><a href="payment.html">Pay</a></button>
+                </div>
+            </div>
+            <section class="upload">
+                <div id="upload-container">
+                    <input type="text" id="name" placeholder="Car Name">
+                    <input type="text" id="model" placeholder="Car Model">
+                    <input type="number" id="price" placeholder="Car Price">
+                    <input type="text" id="color" placeholder="Car Color">
+                    <input type="text" id="file" placeholder="Car Image">
+                   <button id="uploadBtn" onclick="uploadCar()">Upload</button>
+                </div>
+            </section>
+
+
+            <script src="product.js"></script>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>Skyline Automotive</h3>
+            <p>With a passion for quality vehicles and exceptional service, we strive to provide a unique car-buying experience that exceeds expectations. At Skyline Auto motive , we handpick each vehicle in our diverse inventory, ensuring only the finest selection of cars and SUVs for our valued customers. </p>
+        </div>
+        <div class="footer-2">
+            <h3>Products</h3>
+            <p>
+                <a href="index.html">Home</a>
+            </p>
+            <p>
+                <a href="products.html">Products</a>
+            </p>
+            <p>
+                <a href="#">About Us</a>
+            </p>
+            <p>
+                <a href="#">Contact Us</a>
+            </p>
+        </div>
+        <div class="footer-3">
+            <h3>Useful Links</h3>
+            <p>
+                <a href="#">Reviews</a>
+            </p>
+            <p>
+                <a href="#">Get in Touch</a>
+            </p>
+            <p>
+                <a href="#">FAQ's</a>
+            </p>
+        </div>
+        <div class="footer-4">
+            <h3>Find us:</h3>
+            <p>
+                2586 Dunwin, Mississauga, Canada
+            </p>
+            <p>
+                skyline@automotive.com
+            </p>
+            <p>
+                +76 956 039 999
+            </p>
+            <div class="socials">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://instagram.com./"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"> 
+        <span class="copy">©</span> 2024 <span class="f5">Skyline Automotive.</span>  All rights reserved.
+    </div>
+</footer>
+</body>
+</html>
